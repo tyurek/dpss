@@ -1,9 +1,9 @@
 ## Setup
 To set up the test environment first install docker-compose and clone this repo somewhere. Navigate to the root directory and run 
-`docker-compose build adkg`
+`docker-compose build dpss`
 
 Once the docker image is built, it can be run with
-`docker-compose run --rm adkg`
+`docker-compose run --rm dpss`
 
 ## Benchmarks
 Once the docker image is running, a benchmark of the high-threshold batch DPSS can be performed by running
