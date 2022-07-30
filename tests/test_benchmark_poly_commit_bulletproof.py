@@ -1,8 +1,8 @@
 from pytest import mark
-# from adkg.betterpairing import ZR
+# from dpss.betterpairing import ZR
 from pypairing import Curve25519ZR as ZR
-from adkg.polynomial import polynomials_over
-from adkg.poly_commit_bulletproof import PolyCommitBulletproof
+from dpss.polynomial import polynomials_over
+from dpss.poly_commit_bulletproof import PolyCommitBulletproof
 import cProfile
 
 

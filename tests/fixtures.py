@@ -1,5 +1,5 @@
-from adkg.mpc import TaskProgramRunner
-from adkg.router import SimpleRouter
+from dpss.mpc import TaskProgramRunner
+from dpss.router import SimpleRouter
 import asyncio
 import random
 from tempfile import mkdtemp
@@ -9,8 +9,8 @@ from os import makedirs
 
 @fixture
 def galois_field():
-    from adkg.field import GF
-    from adkg.elliptic_curve import Subgroup
+    from dpss.field import GF
+    from dpss.elliptic_curve import Subgroup
 
     return GF(Subgroup.BLS12_381)
 
@@ -57,7 +57,7 @@ def galois_field_roots(galois_field):
 
 @fixture
 def polynomial(galois_field):
-    from adkg.polynomial import polynomials_over
+    from dpss.polynomial import polynomials_over
 
     return polynomials_over(galois_field)
 
@@ -70,7 +70,7 @@ def rust_field():
 
 @fixture
 def rust_polynomial(rust_field):
-    from adkg.polynomial import polynomials_over
+    from dpss.polynomial import polynomials_over
 
     return polynomials_over(rust_field)
 
@@ -92,9 +92,9 @@ class TestPreProcessing:
     """
 
     def __init__(self):
-        from adkg.preprocessing import PreProcessedElements
-        from adkg.preprocessing import PreProcessingConstants as Constants
-        from adkg.progs.mixins.base import MixinBase
+        from dpss.preprocessing import PreProcessedElements
+        from dpss.preprocessing import PreProcessingConstants as Constants
+        from dpss.progs.mixins.base import MixinBase
 
         makedirs(Constants.SHARED_DATA_DIR.value, exist_ok=True)
         self.test_data_dir = f"{mkdtemp(dir=Constants.SHARED_DATA_DIR.value)}/"
@@ -176,7 +176,7 @@ def benchmark_router():
 
 
 def _preprocess(n, t, k, to_generate):
-    from adkg.preprocessing import PreProcessedElements
+    from dpss.preprocessing import PreProcessedElements
 
     pp_elements = PreProcessedElements()
     for kind in to_generate:
@@ -228,7 +228,7 @@ def test_runner():
 
 @fixture
 def benchmark_runner(benchmark):
-    from adkg.preprocessing import PreProcessedElements
+    from dpss.preprocessing import PreProcessedElements
 
     def _benchmark_runner(prog, n=4, t=1, to_generate=[], k=1000, mixins=[]):
         pp_elements = PreProcessedElements()

@@ -1,5 +1,5 @@
 import random
-from adkg.reed_solomon_wb import make_wb_encoder_decoder
+from dpss.reed_solomon_wb import make_wb_encoder_decoder
 
 
 def test_decoding():

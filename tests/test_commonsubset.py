@@ -2,11 +2,11 @@ import random
 import asyncio
 from pytest import mark
 
-from adkg.broadcast.commoncoin import shared_coin
-from adkg.broadcast.binaryagreement import binaryagreement
-from adkg.broadcast.reliablebroadcast import reliablebroadcast
-from adkg.broadcast.commonsubset import commonsubset
-from adkg.broadcast.crypto.boldyreva import dealer
+from dpss.broadcast.commoncoin import shared_coin
+from dpss.broadcast.binaryagreement import binaryagreement
+from dpss.broadcast.reliablebroadcast import reliablebroadcast
+from dpss.broadcast.commonsubset import commonsubset
+from dpss.broadcast.crypto.boldyreva import dealer
 
 
 # Make the threshold signature common coins

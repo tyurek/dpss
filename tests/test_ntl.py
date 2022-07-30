@@ -1,4 +1,4 @@
-from adkg.ntl import (
+from dpss.ntl import (
     lagrange_interpolate,
     vandermonde_batch_interpolate,
     vandermonde_batch_evaluate,

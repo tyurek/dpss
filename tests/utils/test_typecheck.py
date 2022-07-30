@@ -1,4 +1,4 @@
-from adkg.utils.typecheck import TypeCheck
+from dpss.utils.typecheck import TypeCheck
 from pytest import raises
 from typing import Callable
 

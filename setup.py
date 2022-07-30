@@ -7,8 +7,8 @@ from setuptools import setup, find_packages
 from setuptools.extension import Extension
 from Cython.Build import cythonize
 
-NAME = "adkg"
-DESCRIPTION = "adkg"
+NAME = "dpss"
+DESCRIPTION = "dpss"
 REQUIRES_PYTHON = ">=3.7.0"
 VERSION = None
 
@@ -82,8 +82,8 @@ extra_link_args = [
 
 extensions = [
     Extension(
-        name="adkg.ntl._hbmpc_ntl_helpers",
-        sources=["adkg/ntl/hbmpc_ntl_helpers.pyx"],
+        name="dpss.ntl._hbmpc_ntl_helpers",
+        sources=["dpss/ntl/hbmpc_ntl_helpers.pyx"],
         language="c++",
         extra_compile_args=extra_compile_args,
         extra_link_args=extra_link_args,

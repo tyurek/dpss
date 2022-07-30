@@ -1,6 +1,6 @@
 from pytest import mark
-from adkg.polynomial import polynomials_over
-from adkg.acss_dcr import ACSS_DCR
+from dpss.polynomial import polynomials_over
+from dpss.acss_dcr import ACSS_DCR
 from pickle import dumps, loads
 # from pypairing import Curve25519G as G1, Curve25519ZR as ZR, curve25519multiexp as multiexp
 from pypairing import G1, ZR, blsmultiexp as multiexp

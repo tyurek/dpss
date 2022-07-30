@@ -1,6 +1,6 @@
 from pytest import mark
-from adkg.progs.jubjub import SharedPoint, share_mul
-from adkg.progs.mixins.share_arithmetic import (
+from dpss.progs.jubjub import SharedPoint, share_mul
+from dpss.progs.mixins.share_arithmetic import (
     BeaverMultiply,
     BeaverMultiplyArrays,
     InvertShare,
@@ -9,7 +9,7 @@ from adkg.progs.mixins.share_arithmetic import (
     DivideShareArrays,
     Equality,
 )
-from adkg.elliptic_curve import Jubjub, Point
+from dpss.elliptic_curve import Jubjub, Point
 
 
 MIXINS = [

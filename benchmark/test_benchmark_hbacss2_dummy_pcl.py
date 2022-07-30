@@ -2,16 +2,16 @@ import pypairing
 from pytest import mark
 from contextlib import ExitStack
 from random import randint
-from adkg.betterpairing import ZR, G1
-from adkg.polynomial import polynomials_over
-from adkg.poly_commit_log import PolyCommitLog
-from adkg.poly_commit_dummy import PolyCommitAMTDummy, PolyCommitLoglinDummy
-from adkg.hbavss import Hbacss0, Hbacss1, Hbacss2, HbAVSSMessageType
-from adkg.field import GF
-from adkg.utils.misc import print_exception_callback, wrap_send, subscribe_recv
-from adkg.router import SimpleRouter
+from dpss.betterpairing import ZR, G1
+from dpss.polynomial import polynomials_over
+from dpss.poly_commit_log import PolyCommitLog
+from dpss.poly_commit_dummy import PolyCommitAMTDummy, PolyCommitLoglinDummy
+from dpss.hbavss import Hbacss0, Hbacss1, Hbacss2, HbAVSSMessageType
+from dpss.field import GF
+from dpss.utils.misc import print_exception_callback, wrap_send, subscribe_recv
+from dpss.router import SimpleRouter
 import asyncio
-from adkg.symmetric_crypto import SymmetricCrypto
+from dpss.symmetric_crypto import SymmetricCrypto
 import logging
 import time
 import cProfile

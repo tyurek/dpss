@@ -1,11 +1,11 @@
 from pytest import mark
 from random import randint
 from pickle import dumps
-from adkg.polynomial import polynomials_over
-from adkg.poly_commit_feldman import PolyCommitFeldman
-from adkg.acss import Hbacss0SingleShare
-#from adkg.mpc import TaskProgramRunner
-from adkg.utils.misc import print_exception_callback
+from dpss.polynomial import polynomials_over
+from dpss.poly_commit_feldman import PolyCommitFeldman
+from dpss.acss import Hbacss0SingleShare
+#from dpss.mpc import TaskProgramRunner
+from dpss.utils.misc import print_exception_callback
 import asyncio
 
 

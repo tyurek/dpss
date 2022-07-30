@@ -1,6 +1,6 @@
-#from adkg.betterpairing import G1, ZR
-from adkg.polynomial import polynomials_over
-from adkg.poly_commit_const import PolyCommitConst, gen_pc_const_crs
+#from dpss.betterpairing import G1, ZR
+from dpss.polynomial import polynomials_over
+from dpss.poly_commit_const import PolyCommitConst, gen_pc_const_crs
 from pypairing import G1, ZR, blsmultiexp
 
 

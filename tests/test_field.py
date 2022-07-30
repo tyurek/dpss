@@ -1,11 +1,11 @@
 import pytest
 import operator
 from pytest import raises
-from adkg.field import GF, FieldsNotIdentical
+from dpss.field import GF, FieldsNotIdentical
 
 
 def test_bool():
-    from adkg.field import GF
+    from dpss.field import GF
 
     field1 = GF(17)
     assert bool(field1(23))

@@ -1,5 +1,5 @@
 from pytest import mark
-from adkg.preprocessing import PreProcessedElements
+from dpss.preprocessing import PreProcessedElements
 
 
 @mark.parametrize("n,t,k", [(4, 1, 1024), (16, 5, 512), (50, 15, 256)])

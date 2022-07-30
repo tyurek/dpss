@@ -1,8 +1,8 @@
 from pytest import mark
-# from adkg.betterpairing import ZR
+# from dpss.betterpairing import ZR
 from pypairing import ZR
-from adkg.polynomial import polynomials_over
-from adkg.poly_commit_log import PolyCommitLog
+from dpss.polynomial import polynomials_over
+from dpss.poly_commit_log import PolyCommitLog
 import cProfile
 
 long_param_list_t = [1,

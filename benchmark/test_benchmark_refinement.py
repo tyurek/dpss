@@ -1,5 +1,5 @@
 from pytest import mark
-from adkg.progs.random_refinement import refine_randoms
+from dpss.progs.random_refinement import refine_randoms
 
 
 @mark.parametrize("n", [4, 10, 16, 50, 100])

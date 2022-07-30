@@ -1,8 +1,8 @@
 from pytest import mark
-#from adkg.betterpairing import ZR, G1
+#from dpss.betterpairing import ZR, G1
 from pypairing import ZR, G1
-from adkg.polynomial import polynomials_over
-from adkg.poly_commit_log import PolyCommitLog
+from dpss.polynomial import polynomials_over
+from dpss.poly_commit_log import PolyCommitLog
 
 
 @mark.parametrize("t", [3, 6, 10])

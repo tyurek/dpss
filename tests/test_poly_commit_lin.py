@@ -1,6 +1,6 @@
-from adkg.poly_commit_lin import PolyCommitLin
-from adkg.polynomial import polynomials_over
-from adkg.betterpairing import G1, ZR
+from dpss.poly_commit_lin import PolyCommitLin
+from dpss.polynomial import polynomials_over
+from dpss.betterpairing import G1, ZR
 from random import randint
 
 

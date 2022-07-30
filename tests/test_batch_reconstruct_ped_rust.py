@@ -1,9 +1,9 @@
 import logging
 from pytest import mark
 from random import randint
-from adkg.polynomial import polynomials_over
-from adkg.batch_reconstruct_ped_rust import batch_reconstruct_ped
-from adkg.utils.misc import print_exception_callback
+from dpss.polynomial import polynomials_over
+from dpss.batch_reconstruct_ped_rust import batch_reconstruct_ped
+from dpss.utils.misc import print_exception_callback
 import asyncio
 
 

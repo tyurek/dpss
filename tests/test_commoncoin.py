@@ -1,8 +1,8 @@
 import random
 import asyncio
 from pytest import mark
-from adkg.broadcast.commoncoin import shared_coin
-from adkg.broadcast.crypto.boldyreva import dealer
+from dpss.broadcast.commoncoin import shared_coin
+from dpss.broadcast.crypto.boldyreva import dealer
 
 
 def byzantine_router(n, maxdelay=0.01, seed=None, **byzargs):

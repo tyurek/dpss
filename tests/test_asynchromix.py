@@ -1,9 +1,9 @@
 from pytest import mark
-from adkg.preprocessing import PreProcessedElements
+from dpss.preprocessing import PreProcessedElements
 import apps.asynchromix.butterfly_network as butterfly
-from adkg.mpc import TaskProgramRunner
-from adkg.progs.mixins.share_arithmetic import BeaverMultiplyArrays
-from adkg.progs.mixins.constants import MixinConstants
+from dpss.mpc import TaskProgramRunner
+from dpss.progs.mixins.share_arithmetic import BeaverMultiplyArrays
+from dpss.progs.mixins.constants import MixinConstants
 import apps.asynchromix.powermixing as pm
 from uuid import uuid4
 
@@ -102,7 +102,7 @@ async def test_phase2(galois_field):
 async def test_asynchronous_mixing():
     import asyncio
     import apps.asynchromix.powermixing as pm
-    from adkg.mpc import TaskProgramRunner
+    from dpss.mpc import TaskProgramRunner
 
     n, t, k = 3, 1, 4
     pp_elements = PreProcessedElements()

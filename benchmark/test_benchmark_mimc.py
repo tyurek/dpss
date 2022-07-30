@@ -1,8 +1,8 @@
 from pytest import mark
 from random import randint
-from adkg.elliptic_curve import Jubjub
-from adkg.progs.mimc import mimc_mpc_batch
-from adkg.progs.mixins.share_arithmetic import (
+from dpss.elliptic_curve import Jubjub
+from dpss.progs.mimc import mimc_mpc_batch
+from dpss.progs.mixins.share_arithmetic import (
     BeaverMultiply,
     BeaverMultiplyArrays,
     InvertShare,

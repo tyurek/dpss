@@ -4,12 +4,12 @@ from asyncio import get_event_loop, create_task, gather
 from pytest import mark
 from functools import partial
 
-from adkg.broadcast.commoncoin import shared_coin
-from adkg.broadcast.tylerba_beacon import tylerba
-from adkg.broadcast.crypto.boldyreva import dealer
-from adkg.random_beacon import RandomBeacon
+from dpss.broadcast.commoncoin import shared_coin
+from dpss.broadcast.tylerba_beacon import tylerba
+from dpss.broadcast.crypto.boldyreva import dealer
+from dpss.random_beacon import RandomBeacon
 from collections import defaultdict
-from adkg.utils.misc import print_exception_callback
+from dpss.utils.misc import print_exception_callback
 
 
 def byzantine_broadcast_router(n, maxdelay=0.005, seed=None, **byzargs):

@@ -1,10 +1,10 @@
 import logging
 from pytest import mark
 from random import randint
-from adkg.polynomial import polynomials_over
-from adkg.acss_ped_lt_batch import Hbacss0
-from adkg.utils.misc import print_exception_callback
-from adkg.poly_commit_const import PolyCommitConst, gen_pc_const_crs
+from dpss.polynomial import polynomials_over
+from dpss.acss_ped_lt_batch import Hbacss0
+from dpss.utils.misc import print_exception_callback
+from dpss.poly_commit_const import PolyCommitConst, gen_pc_const_crs
 
 import asyncio
 import phe

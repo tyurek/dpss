@@ -1,4 +1,4 @@
-from adkg.broadcast.reliablebroadcast import reliablebroadcast
+from dpss.broadcast.reliablebroadcast import reliablebroadcast
 from random import randint
 from pytest import mark
 import asyncio

@@ -1,14 +1,14 @@
 from pytest import mark
 from random import randint
 from pickle import dumps
-from adkg.polynomial import polynomials_over
-# from adkg.poly_commit_feldman import PolyCommitFeldman
-from adkg.poly_commit_bulletproof import PolyCommitBulletproof
-from adkg.poly_commit_bulletproof_blind import PolyCommitBulletproofBlind
-from adkg.poly_commit_hybrid import PolyCommitHybrid
-from adkg.haven import HavenAVSS, HybridHavenAVSS
-# from adkg.symmetric_crypto import SymmetricCrypto
-from adkg.utils.misc import print_exception_callback
+from dpss.polynomial import polynomials_over
+# from dpss.poly_commit_feldman import PolyCommitFeldman
+from dpss.poly_commit_bulletproof import PolyCommitBulletproof
+from dpss.poly_commit_bulletproof_blind import PolyCommitBulletproofBlind
+from dpss.poly_commit_hybrid import PolyCommitHybrid
+from dpss.haven import HavenAVSS, HybridHavenAVSS
+# from dpss.symmetric_crypto import SymmetricCrypto
+from dpss.utils.misc import print_exception_callback
 import asyncio
 
 

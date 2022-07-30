@@ -1,9 +1,9 @@
 from pytest import mark
 import pytest
 import asyncio
-from adkg.batch_reconstruction import batch_reconstruct
-from adkg.field import GFElement
-from adkg.polynomial import EvalPoint
+from dpss.batch_reconstruction import batch_reconstruct
+from dpss.field import GFElement
+from dpss.polynomial import EvalPoint
 
 
 @pytest.fixture

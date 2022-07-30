@@ -1,6 +1,6 @@
 from pytest import mark
-from adkg.mpc import TaskProgramRunner
-from adkg.preprocessing import PreProcessedElements
+from dpss.mpc import TaskProgramRunner
+from dpss.preprocessing import PreProcessedElements
 import asyncio
 
 

@@ -22,7 +22,7 @@
 # This should contain all setup required by all other targets, such as environment
 # variables, and essential apt dependencies.
 ##
-FROM python:3.7.3-slim AS base
+FROM python:3.7.13-slim AS base
 
 # Allows for log messages to be immediately dumped to the 
 # stream instead of being buffered.
@@ -118,22 +118,22 @@ RUN make install
 
 # Install better pairing
 # Creates dependencies in /usr/local/include/pbc and /usr/local/lib
-WORKDIR /
-RUN curl -k -so - https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz | tar xzvf - 
-WORKDIR /pbc-0.5.14/
-RUN ./configure
-RUN make
-RUN make install
+#WORKDIR /
+#RUN curl -k -so - https://crypto.stanford.edu/pbc/files/pbc-0.5.14.tar.gz | tar xzvf - 
+#WORKDIR /pbc-0.5.14/
+#RUN ./configure
+#RUN make
+#RUN make install
 
 # Install charm
 # Creates /charm/dist/Charm_Crypto...x86_64.egg, which gets copied into the venv
 # /opt/venv/lib/python3.7/site-packages/Charm_crypto...x86_64.egg
-WORKDIR /
-RUN git clone https://github.com/JHUISI/charm.git 
-WORKDIR /charm
-RUN git reset --hard be9587ccdd4d61c591fb50728ebf2a4690a2064f
-RUN ./configure.sh
-RUN make install 
+#WORKDIR /
+#RUN git clone https://github.com/JHUISI/charm.git 
+#WORKDIR /charm
+#RUN git reset --hard be9587ccdd4d61c591fb50728ebf2a4690a2064f
+#RUN ./configure.sh
+#RUN make install 
 
 # Copy pairing from build context and install it
 COPY pairing/ pairing/
@@ -150,7 +150,7 @@ RUN pip install pairing/
 # target for dev targets later with good cache performance by delaying copying 
 # changed files until the end of the dev targets.
 FROM base AS pre-prod
-WORKDIR /usr/src/adkg/
+WORKDIR /usr/src/dpss/
 
 COPY --from=build ${PYTHON_LIBRARY_PATH} ${PYTHON_LIBRARY_PATH}
 COPY --from=build /usr/local/include/ /usr/local/include/
@@ -161,9 +161,9 @@ COPY --from=build ${LIBRARY_PATH} ${LIBRARY_PATH}
 
 COPY setup.py .
 COPY README.md .
-COPY adkg/__version__.py adkg/
-COPY adkg/__init__.py adkg/
-COPY adkg/ntl/ adkg/ntl/
+COPY dpss/__version__.py dpss/
+COPY dpss/__init__.py dpss/
+COPY dpss/ntl/ dpss/ntl/
 # COPY apps/asynchromix/solver/ apps/asynchromix/solver/
 RUN pip install -e .['tests,docs']
 
@@ -206,7 +206,7 @@ RUN apt-get install -y --no-install-recommends \
 # RUN npm install -g ganache-cli
 
 # Install remaining pip dependencies here
-WORKDIR /usr/src/adkg/
+WORKDIR /usr/src/dpss/
 RUN pip install -e .['dev']
 
 FROM pre-dev AS dev

@@ -1,5 +1,5 @@
 import pytest
-from adkg.reed_solomon import (
+from dpss.reed_solomon import (
     VandermondeEncoder,
     FFTEncoder,
     VandermondeDecoder,
@@ -7,10 +7,10 @@ from adkg.reed_solomon import (
     GaoRobustDecoder,
     WelchBerlekampRobustDecoder,
 )
-from adkg.polynomial import EvalPoint
-from adkg.reed_solomon import EncoderFactory, DecoderFactory
-from adkg.reed_solomon import EncoderSelector, DecoderSelector
-from adkg.ntl import AvailableNTLThreads
+from dpss.polynomial import EvalPoint
+from dpss.reed_solomon import EncoderFactory, DecoderFactory
+from dpss.reed_solomon import EncoderSelector, DecoderSelector
+from dpss.ntl import AvailableNTLThreads
 from unittest.mock import patch
 
 

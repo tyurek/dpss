@@ -1,4 +1,4 @@
-from adkg.proofs import (
+from dpss.proofs import (
     prove_inner_product,
     verify_inner_product,
     prove_inner_product_one_known,

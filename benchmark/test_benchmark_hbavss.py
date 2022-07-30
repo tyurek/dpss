@@ -1,12 +1,12 @@
 from pytest import mark
 from contextlib import ExitStack
 from random import randint
-from adkg.poly_commit_const import gen_pc_const_crs, PolyCommitConst
-from adkg.poly_commit_lin import PolyCommitLin
-from adkg.betterpairing import G1, ZR
-from adkg.hbavss import HbAvssLight, HbAvssBatch
-from adkg.field import GF
-from adkg.elliptic_curve import Subgroup
+from dpss.poly_commit_const import gen_pc_const_crs, PolyCommitConst
+from dpss.poly_commit_lin import PolyCommitLin
+from dpss.betterpairing import G1, ZR
+from dpss.hbavss import HbAvssLight, HbAvssBatch
+from dpss.field import GF
+from dpss.elliptic_curve import Subgroup
 import asyncio
 
 

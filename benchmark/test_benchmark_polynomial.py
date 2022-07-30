@@ -1,7 +1,7 @@
 from pytest import mark
 from random import randint
-from adkg.polynomial import get_omega
-from adkg.ntl.helpers import lagrange_interpolate, fft_interpolate
+from dpss.polynomial import get_omega
+from dpss.ntl.helpers import lagrange_interpolate, fft_interpolate
 
 cache = {}
 

@@ -1,5 +1,5 @@
 from pytest import mark
-from adkg.utils.misc import wrap_send
+from dpss.utils.misc import wrap_send
 from random import randint
 import asyncio
 
@@ -19,7 +19,7 @@ def test_wrap_send():
 
 @mark.asyncio
 async def test_pool():
-    from adkg.utils.task_pool import TaskPool
+    from dpss.utils.task_pool import TaskPool
 
     max_tasks = 4
 

@@ -1,7 +1,7 @@
-from adkg.field import GF
-from adkg.elliptic_curve import Subgroup
-from adkg.reed_solomon import GaoRobustDecoder
-from adkg.polynomial import EvalPoint, polynomials_over
+from dpss.field import GF
+from dpss.elliptic_curve import Subgroup
+from dpss.reed_solomon import GaoRobustDecoder
+from dpss.polynomial import EvalPoint, polynomials_over
 from random import randint
 from pytest import mark
 

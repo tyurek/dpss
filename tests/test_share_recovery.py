@@ -1,12 +1,12 @@
 import asyncio
 from pytest import mark
 
-from adkg.poly_commit_const_dl import PolyCommitConstDL, gen_pc_const_dl_crs
-#from adkg.betterpairing import ZR
+from dpss.poly_commit_const_dl import PolyCommitConstDL, gen_pc_const_dl_crs
+#from dpss.betterpairing import ZR
 from pypairing import ZR
-from adkg.polynomial import polynomials_over
-from adkg.utils.misc import print_exception_callback
-from adkg.share_recovery import HbACSS1Recoverer
+from dpss.polynomial import polynomials_over
+from dpss.utils.misc import print_exception_callback
+from dpss.share_recovery import HbACSS1Recoverer
 
 @mark.asyncio
 async def test_HbACSS1Recoverer(test_router):

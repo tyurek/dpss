@@ -2,8 +2,8 @@ import asyncio
 from pytest import mark
 from contextlib import ExitStack
 from random import randint
-from adkg.offline_robust import RandomGenerator, TripleGenerator
-from adkg.mpc import TaskProgramRunner
+from dpss.offline_robust import RandomGenerator, TripleGenerator
+from dpss.mpc import TaskProgramRunner
 
 
 @mark.asyncio

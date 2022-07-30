@@ -1,9 +1,9 @@
 import logging
 from pytest import mark
 from random import randint
-from adkg.polynomial import polynomials_over
-from adkg.dpss import DPSS
-from adkg.utils.misc import print_exception_callback
+from dpss.polynomial import polynomials_over
+from dpss.dpss import DPSS
+from dpss.utils.misc import print_exception_callback
 import asyncio
 import phe
 

@@ -1,7 +1,7 @@
 from pytest import mark
-from adkg.polynomial import polynomials_over
-from adkg.poly_commit_feldman import PolyCommitFeldman
-from adkg.adkg import adkg
+from dpss.polynomial import polynomials_over
+from dpss.poly_commit_feldman import PolyCommitFeldman
+from dpss.adkg import adkg
 import asyncio
 
 
